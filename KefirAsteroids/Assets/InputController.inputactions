@@ -1,0 +1,112 @@
+{
+    "name": "InputController",
+    "maps": [
+        {
+            "name": "PlayerInput",
+            "id": "2d5c49ac-77bc-4ee6-b1e1-714bc5a71ce2",
+            "actions": [
+                {
+                    "name": "Rotate",
+                    "type": "Value",
+                    "id": "f9920a25-795f-46dc-9d5b-a45163d089c9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "MoveForward",
+                    "type": "Value",
+                    "id": "8f1f894a-85c5-4c42-81f6-b3553c59f5e9",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)"
+                },
+                {
+                    "name": "SwitchWeapon",
+                    "type": "Value",
+                    "id": "ff7346b1-6552-4fb6-b071-68b0aff70c88",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Fire",
+                    "type": "Value",
+                    "id": "2d8f2e29-bb13-4c5a-b8b8-b9ef7956ffcc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "RotationKeys",
+                    "id": "a6be1e43-05e9-4a53-b00d-ccfef7a177bf",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "c671d237-0805-401e-bbaa-3d8f3afb8635",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "f756459a-4523-472e-a1b4-a5e793bf3a7c",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "9df58f17-37c1-4b43-98b1-61d739422221",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveForward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ea22f402-8737-45cf-ae62-78097a5dc8ca",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7a0da71f-0af3-4dfc-b330-4d3797002e3c",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchWeapon",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
